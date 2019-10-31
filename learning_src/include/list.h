@@ -29,15 +29,14 @@ typedef struct List_
 {
     int size;
     int (*match)(const void *key1, const void *key2);
-    void (*destory)(void *data);
+    void (*destroy)(void *data);
     ListElmt *head;
     ListElmt *tail;
 } List;
 
-
 /* Public Interface */
-void list_init(List *list, void (*destory)(void *data));
-void list_destory(List *list);
+void list_init(List *list, void (*destroy)(void *data));
+void list_destroy(List *list);
 int list_ins_next(List *list, ListElmt *element, const void *data);
 int list_rem_next(List *list, ListElmt *element, void **data);
 
@@ -46,7 +45,7 @@ int list_rem_next(List *list, ListElmt *element, void **data);
 #define list_tail(list) ((list)->tail)
 #define list_is_head(list, element) ((element) == ((list)->head) ? 1 : 0)
 #define list_is_tail(list, element) ((element) == NULL ? 1 : 0)
-#define list_data(element)  ((element)->data)
-#define list_next(element)  ((element)->next)
+#define list_data(element) ((element)->data)
+#define list_next(element) ((element)->next)
 
-#endif
+#endif // LISH_H
