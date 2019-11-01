@@ -1,11 +1,11 @@
 
 # LearningMasteringAlgorithms-C
-Mastering Algorithms C: 《算法精解：C语言描述》
+Mastering Algorithms With C: 《算法精解：C语言描述》
 
 <img src="./book/logo.png" 
     alt="Mastering Algorithms C book logo"
     title="Mastering Algorithms C"
-    align="right" width="" high="" />
+    align="right" width="160" high="" />
 
 
 ## 目录说明
@@ -50,9 +50,8 @@ Mastering Algorithms C: 《算法精解：C语言描述》
     - 尾递归
 
 - 算法分析
-    - 最好情况
-    - 平均情况
-    - 最坏情况
+    - 时间复杂度/空间复杂度
+    - 最好情况 |平均情况 |最坏情况
     - 大 O 分析法
 
 ### 数据结构
@@ -77,6 +76,8 @@ Mastering Algorithms C: 《算法精解：C语言描述》
 - 单链表
     - 页帧管理
     
-- 双链表
+- 双向链表
 
 - 循环链表
+    - 单向循链表
+    - 双向循环链表
