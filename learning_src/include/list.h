@@ -14,7 +14,7 @@
 #include <stdlib.h>
 
 /**
- * 定义链表元素结构
+ * 定义链表节点结构
  */
 typedef struct ListElmt_
 {
