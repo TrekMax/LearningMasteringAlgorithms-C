@@ -8,7 +8,7 @@
  * 
  * 
  */
-#include <stdio.h>
+#include <stdlib.h>
 #include <string.h>
 
 #include "list.h"
@@ -18,13 +18,13 @@
  * 
  * @param    List *list 需要初始化的链表
  * 
- * @param   void (*destory)(void *data) 析构函数
+ * @param   void (*destroy)(void *data) 析构函数
  * 
  */
-void list_init(List *list, void (*destory)(void *data))
+void list_init(List *list, void (*destroy)(void *data))
 {
     list->size = 0;
-    list->destroy = destory;
+    list->destroy = destroy;
 
     list->head = NULL;
     list->tail = NULL;
@@ -42,9 +42,10 @@ void list_destroy(List *list)
 {
     void *data;
     /* 移除每一个节点 */
-    while (list->size > 0)
+    while (list_size(list) > 0)
     {
-        if (list_rem_next(list, NULL, (void **)&data) == 0 && list->destroy != NULL)
+        if (list_rem_next(list, NULL, (void **)&data) == 0 
+            && list->destroy != NULL)
         {
             // 调用用户定义的函数, 释放动态分配的数据
             list->destroy(data);
@@ -68,7 +69,7 @@ void list_destroy(List *list)
  * @param const void *data 插入节点的数据
  * 
  */
-int list_ins_element(List *list, ListElmt *element, const void *data)
+int list_ins_next(List *list, ListElmt *element, const void *data)
 {
     ListElmt *new_element;
 
@@ -149,7 +150,7 @@ int list_rem_next(List *list, ListElmt *element, void **data)
 
         *data = element->next->data;
         old_element = element->next;
-        element->next = old_element->next;
+        element->next = element->next->next;
 
         /* 移除链表尾部节点 */
         if (element->next == NULL)
