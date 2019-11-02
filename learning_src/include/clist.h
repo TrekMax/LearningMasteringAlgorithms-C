@@ -40,7 +40,7 @@ void clist_destroy(CList *list);
 int clist_ins_next(CList *list, CListElmt *element, const void *data);
 int clist_rem_next(CList *list, CListElmt *element, void **data);
 
-#define clist_szie(list) ((list)->size)
+#define clist_size(list) ((list)->size)
 #define clist_head(list) ((list)->head)
 #define clist_data(element)  ((element)->data)
 #define clist_next(element)  ((element)->next)

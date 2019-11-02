@@ -55,4 +55,4 @@ int dlist_remove(DList *list, DListElmt *element, void **data);
 #define dlist_next(element)  ((element)->next)
 #define dlist_prev(element)  ((element)->prev)
 
-#endif  // DLIST_H
+#endif // DLIST_H
