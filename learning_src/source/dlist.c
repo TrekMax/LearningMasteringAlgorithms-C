@@ -135,7 +135,7 @@ int dlist_ins_prev(DList *list, DListElmt *element, const void *data)
         return -1;
     }
     /* 为新节点的抽象数据类型申请内存空间 */
-    if ((new_element = (DListElmt *)maclloc(sizeof(DListElmt))) == NULL)
+    if ((new_element = (DListElmt *)malloc(sizeof(DListElmt))) == NULL)
     {
         return -1;
     }
