@@ -14,7 +14,7 @@
 #include <stdlib.h>
 
 /**
- * 定义链表节点结构
+ * 定义双向链表节点结构
  */
 typedef struct DListElmt_
 {
@@ -24,7 +24,7 @@ typedef struct DListElmt_
 } DListElmt;
 
 /**
- * 定义链表结构
+ * 定义双向链表结构
  * 
  */
 typedef struct DList_
@@ -55,4 +55,4 @@ int dlist_remove(DList *list, DListElmt *element, void **data);
 #define dlist_next(element)  ((element)->next)
 #define dlist_prev(element)  ((element)->prev)
 
-#endif
+#endif  // DLIST_H
