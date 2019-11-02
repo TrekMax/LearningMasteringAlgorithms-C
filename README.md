@@ -18,7 +18,9 @@ Mastering Algorithms With C: 《算法精解：C语言描述》
 
 - learning_notes: 学习笔记
 
-    - image
+    - [./image](./image)
+    - [./Google C++ Style Guide.pdf](./learning_notes\Google\ C++\ Style\ Guide.pdf)
+        Google C++ 编程风格指南
     - ...
 
 - book: 电子书及原书代码
@@ -51,6 +53,11 @@ Mastering Algorithms With C: 《算法精解：C语言描述》
 ### 预备知识
 
 - 概述
+
+    - 数据结构概述
+    - 算法概述
+    - 小酌软件工程
+    - 
 
 - 指针操作
 
