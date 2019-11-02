@@ -43,7 +43,6 @@ void clist_destroy(CList *list)
     while (clist_size(list) > 0)
     {
         if ((list)->destroy != NULL && clist_rem_next(list, NULL, (void *)&data))
-            ;
         {
             list->destroy(data);
         }
@@ -122,7 +121,6 @@ int clist_rem_next(CList *list, CListElmt *element, void **data)
         old_element = element->next;
         element->next = old_element->next;
     }
-    
     /* 释放节点数据结构内存空间 */
     free(old_element);
     list->size--;
