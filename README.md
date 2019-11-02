@@ -94,3 +94,15 @@ Mastering Algorithms With C: 《算法精解：C语言描述》
     - 第二次机会置换法 |LUR 页面置换法
         - 最少使用算法 (LRU: Least Recently Used)
 
+相关主题:
+>
+> 双向循环链表
+>
+> 链表数组
+>
+> 广义表
+>
+> 游标
+>
+
+### 栈和队列
