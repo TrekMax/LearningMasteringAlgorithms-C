@@ -1,0 +1,48 @@
+/**
+ * @filename: clist.h
+ * 
+ * @author: QinYUN575
+ * 
+ * @create date: 2019/11/1
+ * 
+ * 
+ * 
+ */
+#ifndef CLIST_H
+#define CLIST_H
+
+#include <stdlib.h>
+
+/**
+ * 定义单向链表节点结构
+ */
+typedef struct CListElmt_
+{
+    void *data;
+    struct CListElmt_ *next;
+} CListElmt;
+
+/**
+ * 定义单向循环链表结构
+ */
+typedef struct CList_
+{
+    int size;
+    int (*match)(const void *key1, const void*key2);
+    void (*destroy)(void *data);
+
+    CListElmt *head;
+} CList;
+
+/* Public Interface */
+void clist_init(CList *list, void (*destroy)(void *data));
+void clist_destroy(CList *list);
+int clist_ins_next(CList *list, CListElmt *element, const void *data);
+int clist_rem_next(CList *list, CListElmt *element, void **data);
+
+#define clist_szie(list) ((list)->size)
+#define clist_head(list) ((list)->head)
+#define clist_data(element)  ((element)->data)
+#define clist_next(element)  ((element)->next)
+
+#endif  // CLIST_H

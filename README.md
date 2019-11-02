@@ -81,3 +81,6 @@ Mastering Algorithms With C: 《算法精解：C语言描述》
 - 循环链表
     - 单向循链表
     - 双向循环链表
+    - 第二次机会页面置换法
+        - 最少使用算法 (LRU: Least Recently Used)
+
