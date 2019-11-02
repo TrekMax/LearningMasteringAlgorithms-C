@@ -5,7 +5,7 @@ Mastering Algorithms With C: 《算法精解：C语言描述》
 <img src="./book/logo.png" 
     alt="Mastering Algorithms C book logo"
     title="Mastering Algorithms C"
-    style="padding-right:50px;" align="right" width="30%" high="" />
+    style="padding-right:100px;" align="right" width="30%" high="" />
 
 
 ## 目录说明
