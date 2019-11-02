@@ -5,7 +5,7 @@ Mastering Algorithms With C: 《算法精解：C语言描述》
 <img src="./book/logo.png" 
     alt="Mastering Algorithms C book logo"
     title="Mastering Algorithms C"
-    align="right" width="160" high="" />
+    style="padding-right:50px;" align="right" width="30%" high="" />
 
 
 ## 目录说明
@@ -35,6 +35,16 @@ Mastering Algorithms With C: 《算法精解：C语言描述》
     - [./book/README.md](./book/README.md)
     - [./book/logo.png](./book/logo.png)
 
+## 编程规范 && 辅助文档
+
+- 代码规范&&参考
+
+    [《Google 开源项目风格指南 (中文版)》](https://zh-google-styleguide.readthedocs.io/en/latest/)
+
+
+- 源码构建&&测试
+
+    Makefile 语法&&规则 : [《跟我一起写Makefile》](https://seisman.github.io/how-to-write-makefile/index.html)
 
 ## Mastering Algorithms C
 
