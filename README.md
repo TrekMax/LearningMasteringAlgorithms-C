@@ -12,14 +12,14 @@ Mastering Algorithms With C: 《算法精解：C语言描述》
 
 - learning_src: 学习代码(中文注释)
 
-    - [./learning_src/example](./learning_src/example)
+    - [./learning_src/examples](./learning_src/examples)
     - [./learning_src/include](./learning_src/include)
     - [./learning_src/source](./learning_src/source)
 
 - learning_notes: 学习笔记
 
     - [./image](./image)
-    - [./Google C++ Style Guide.pdf](./learning_notes\Google\ C++\ Style\ Guide.pdf)
+    - [./Google C++ Style Guide.pdf](./learning_notes/Google\ C++\ Style\ Guide.pdf)
         Google C++ 编程风格指南
     - [《跟我一起写 Makefile (PDF 重制版)》](./learning_notes/Makefile.pdf)
     - ...
@@ -116,3 +116,11 @@ Mastering Algorithms With C: 《算法精解：C语言描述》
 >
 
 ### 栈和队列
+
+- 栈 (LIFO)
+    typedef Stack of List
+
+- 队列 (FIFO)
+    typdef Queue of List
+
+### 集合
