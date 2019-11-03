@@ -19,7 +19,7 @@ Mastering Algorithms With C: 《算法精解：C语言描述》
 - learning_notes: 学习笔记
 
     - [./image](./image)
-    - [./Google C++ Style Guide.pdf](./learning_notes/Google\ C++\ Style\ Guide.pdf)
+    - [./Google C++ Style Guide.pdf](./learning_notes/Google%20C++%20Style%20Guide.pdf)
         Google C++ 编程风格指南
     - [《跟我一起写 Makefile (PDF 重制版)》](./learning_notes/Makefile.pdf)
     - ...
@@ -118,10 +118,25 @@ Mastering Algorithms With C: 《算法精解：C语言描述》
 ### 栈和队列
 
 - 栈 (LIFO)
+
     typedef Stack of List
 
 - 队列 (FIFO)
+
     typdef Queue of List
+    
+    typdef Queue of Array | 循环队列
+
     应用例子: 事件处理机制
 
+相关主题:
+>
+> 多态
+>
+> 双向队列
+>
+> 循环队列
+>
+
 ### 集合
+
