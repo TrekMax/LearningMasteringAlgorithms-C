@@ -21,6 +21,7 @@ Mastering Algorithms With C: 《算法精解：C语言描述》
     - [./image](./image)
     - [./Google C++ Style Guide.pdf](./learning_notes\Google\ C++\ Style\ Guide.pdf)
         Google C++ 编程风格指南
+    - [《跟我一起写 Makefile (PDF 重制版)》](./learning_notes/Makefile.pdf)
     - ...
 
 - book: 电子书及原书代码
@@ -46,7 +47,9 @@ Mastering Algorithms With C: 《算法精解：C语言描述》
 
 - 源码构建&&测试
 
-    Makefile 语法&&规则 : [《跟我一起写Makefile》](https://seisman.github.io/how-to-write-makefile/index.html)
+    examples 测试环境: linux GCC/CC
+
+    Makefile 语法&&规则 : [《跟我一起写Makefile》(在线)](https://seisman.github.io/how-to-write-makefile/index.html)
 
 ## Mastering Algorithms C
 
