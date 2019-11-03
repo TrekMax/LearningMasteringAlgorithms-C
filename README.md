@@ -122,5 +122,6 @@ Mastering Algorithms With C: 《算法精解：C语言描述》
 
 - 队列 (FIFO)
     typdef Queue of List
+    应用例子: 事件处理机制
 
 ### 集合
