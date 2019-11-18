@@ -9,6 +9,20 @@ Mastering Algorithms With C: 《算法精解：C 语言描述》
 
 ## 目录说明
 
+- book: 电子书及原书代码
+
+  - [./book/examples_pc](./book/examples_pc)
+  - [./book/examples_unix](./book/examples_unix)
+
+  - [./book/Oreilly.Mastering.Algorithms.with.C.pdf](./book/Oreilly.Mastering.Algorithms.with.C.pdf)
+    原书英文版 PDF 格式
+
+  - [./book/算法精解：C 语言描述(中文版).pdf](<./book/算法精解：C语言描述(中文版).pdf>)
+    原书中文影印版 PDF 格式
+
+  - [./book/README.md](./book/README.md)
+  - [./book/logo.png](./book/logo.png)
+
 - learning_src: 学习代码(中文注释)
 
   - [./learning_src/examples](./learning_src/examples)
@@ -23,19 +37,6 @@ Mastering Algorithms With C: 《算法精解：C 语言描述》
   - [《跟我一起写 Makefile (PDF 重制版)》](./learning_notes/Makefile.pdf)
   - ...
 
-- book: 电子书及原书代码
-
-  - [./book/examples_pc](./book/examples_pc)
-  - [./book/examples_unix](./book/examples_unix)
-
-  - [./book/Oreilly.Mastering.Algorithms.with.C.pdf](./book/Oreilly.Mastering.Algorithms.with.C.pdf)
-    原书英文版 PDF 格式
-
-  - [./book/算法精解：C 语言描述(中文版).pdf](<./book/算法精解：C语言描述(中文版).pdf>)
-    原书中文影印版 PDF 格式
-
-  - [./book/README.md](./book/README.md)
-  - [./book/logo.png](./book/logo.png)
 
 ## 编程规范 && 辅助文档
 
@@ -160,16 +161,52 @@ Mastering Algorithms With C: 《算法精解：C 语言描述》
 
   乘法
 
+  均匀散列
+
 * 链式哈希表
+
+  冲突解决: 链式桶 - bucket
 
 * 链式哈希表的实现与分析
 
 * 开地址哈希表
 
+  冲突解决: 探查
+
+    - 线性探查
+
+    - 双散列
+
 * 开地址哈希表的实现与分析
 
 相关主题
 
-> 均匀散列
+> 直接寻址哈希表
+>
+> 线性同余发生器
+>
+> 二次探查法
+>
+> 通用散列
+>
+
+
+
+扩展: 解决哈希冲突的方法
+
+  - 链地址法(链式哈希表)
+
+  - 开放定址法(开地址哈希表)
+
+    - 线性探查法
+  
+    - 平方探查法
+  
+    - 双散列函数探查法
+
+  - 再哈希法
+
+  - 建立公共溢出区
+
 
 ### 树
